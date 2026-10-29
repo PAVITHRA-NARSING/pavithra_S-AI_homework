@@ -1,0 +1,17 @@
+Question Title: Advanced File Management
+
+Question Link: https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution:
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old/
+mv summary.docx final_summary.docx
+cp final_summary.docx old/
+rm report_backup.docx
+
+Approach:
+Create the project directory and the required files first. Copy the report to make a backup, create the old directory, move the draft into it, and rename the summary file. Copy the renamed summary into the old directory and remove the backup file.
