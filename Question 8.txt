@@ -1,0 +1,16 @@
+Question Title: Git Repository Setup and Commits
+
+Question Link: https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+Solution:
+cd api-service
+git init
+git add README.md
+git commit -m "Add documentation"
+git add server.js routes.js package.json
+git commit -m "Add server files"
+git status
+git log
+
+Approach:
+Initialize a Git repository inside api-service. Stage and commit README.md separately to create the documentation commit. Then stage server.js, routes.js, and package.json together and commit them as server files. Finally, use git status to check the working tree and git log to review the commits.
