@@ -1,0 +1,13 @@
+Question Title: Deployment Project Permissions
+
+Question Link: https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution:
+chmod 700 deployment/app/*.py
+chmod 770 deployment/datasets
+chmod 770 deployment/datasets/*
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/*.sh
+
+Approach:
+Set permissions for Python files to 700, allowing only the owner to read, write, and execute them. Set the datasets directory and its files to 770 so the owner and group have full access. Give OVERVIEW.md read and write permissions for the owner and read permissions for others. Set shell scripts to 755 so everyone can read and execute them, while only the owner can modify them.
