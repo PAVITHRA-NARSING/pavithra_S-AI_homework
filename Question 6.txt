@@ -1,0 +1,22 @@
+Question Title: Simplify the Compilation Process
+
+Question Link: https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+hello.c:
+#include <stdio.h>
+int main() {
+    printf("Hello from C\n");
+    return 0;
+}
+
+build.sh:
+#!/bin/bash
+gcc hello.c -o hello
+
+chmod +x build.sh
+./build.sh
+./hello
+
+Approach:
+Write a C program that prints the required message. Create a shell script containing the GCC command to compile hello.c into an executable named hello. Make the build script executable, run it to compile the program, and execute the resulting file.
