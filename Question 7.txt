@@ -1,0 +1,9 @@
+Question Title: Retrieve Database Credentials
+
+Question Link: https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+Solution:
+grep -r -h '^DB_PASSWORD=' EventApp --exclude=db_password.txt | head -n 1 > EventApp/db_password.txt
+
+Approach:
+Search the EventApp directory recursively for lines beginning with DB_PASSWORD=. Exclude the output file so it is not searched again. Select the first matching line and save it to db_password.txt inside EventApp.
