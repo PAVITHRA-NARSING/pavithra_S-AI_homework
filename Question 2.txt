@@ -1,0 +1,15 @@
+Question Title: Create a Service Script
+
+Question Link: https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution:
+#!/bin/bash
+mkdir -p service/controllers
+mkdir -p service/models
+mkdir -p service/routes
+mkdir -p service/middleware
+echo "API Service" > service/README.md
+echo 'console.log("Server started");' > service/server.js
+
+Approach:
+Create the service directory and its required subdirectories using mkdir -p. Then create README.md with the service description and server.js with the server startup message.
