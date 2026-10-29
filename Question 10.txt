@@ -1,0 +1,18 @@
+Question Title: The Internship Project Setup
+
+Question Link: https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+cd client-app
+git init
+echo "<!DOCTYPE html><html><head><title>Client App</title></head><body><h1>Client App</h1></body></html>" > index.html
+echo 'console.log("Client app initialized");' > app.js
+git add index.html app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git branch -M main
+git push -u origin main
+git log
+
+Approach:
+Navigate into the client-app directory and initialize Git. Replace the placeholder contents of index.html and app.js with starter content before staging them. Stage only those two files and commit them with the required message. Register the specified remote as origin, rename the branch to main, push for the first time, and use git log to verify the commit history.
